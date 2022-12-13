@@ -38,6 +38,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <li><img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
   </li>
   <li><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"></li>
+  <li>Provider</li>
+  <li>Value Notifier</li>
 </ul>
 <!-- final linguagens -->
 <h2 id="screenshot">ScreenShots</h2>
@@ -77,7 +79,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <p>Feito por Adriana Bispo. Entre em contato</p>
   <a href="mailto:adriana.bispo283@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 
-<h2 id='licenca'>Licença</h2>
+<!--<h2 id='licenca'>Licença</h2>
 <p>Este projeto esta sobe a licença: 
 </br></br> <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
 </p>
@@ -101,3 +103,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
  Colocar a lista de filtros em outro arquivo.
  colocar em mvp
 
+-->
