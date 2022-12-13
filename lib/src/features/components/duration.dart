@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-import '../../utils/color.dart';
+//utils
+import '../../shared/utils/color.dart';
 
 class Duration extends StatelessWidget {
-  Duration({required this.time, this.cor = AppColor.primaria});
+  const Duration({
+    Key? key,
+    required this.time,
+    this.cor = AppColor.primaria,
+  }) : super(key: key);
   final String time;
   final Color cor;
 
@@ -19,7 +24,9 @@ class Duration extends StatelessWidget {
         children: [
           Icon(
             Icons.schedule,
-            color: cor == AppColor.primaria ? AppColor.secundaria : AppColor.primaria,
+            color: cor == AppColor.primaria
+                ? AppColor.secundaria
+                : AppColor.primaria,
             size: 18,
           ),
           const SizedBox(width: 7),
@@ -27,12 +34,13 @@ class Duration extends StatelessWidget {
             time,
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: cor == AppColor.primaria ? AppColor.secundaria : AppColor.primaria,
+              color: cor == AppColor.primaria
+                  ? AppColor.secundaria
+                  : AppColor.primaria,
             ),
           ),
         ],
       ),
     );
-  
   }
 }

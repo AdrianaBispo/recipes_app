@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'duration.dart';
 import 'rating.dart';
 //utils
-import '../../../../utils/color.dart';
+import '../../shared/utils/color.dart';
 
 class CardTitle extends StatelessWidget {
   CardTitle(

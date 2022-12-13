@@ -1,5 +1,5 @@
 import '../../shared/models/meal.dart';
-import '../../repository/meal_api.dart';
+import '../repository/meal_api.dart';
 import 'package:flutter/foundation.dart';
 
 class HomeController{

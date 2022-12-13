@@ -5,10 +5,10 @@ import '../../shared/models/meal.dart';
 //controller
 import '../detail_controller.dart';
 //utils
-import '../../../utils/color.dart';
+import '../../shared/utils/color.dart';
 //ui
-import '../../components/cardtitle.dart';
-import '../../components/card.dart';
+import '../components/cardtitle.dart';
+import '../components/card.dart';
 
 class MealDetailScreen extends StatefulWidget {
   const MealDetailScreen({

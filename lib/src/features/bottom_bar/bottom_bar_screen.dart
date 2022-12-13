@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../favorit/favorit_screen.dart';
 import '../home/home.dart';
 //utils
-import '../../../utils/color.dart';
+import '../../shared/utils/color.dart';
 class BottomBarScreen extends StatefulWidget {
 
   const BottomBarScreen({Key? key}) : super(key: key);

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../shared/models/meal.dart';
+import '../../shared/models/meal.dart';
 //ui
 import '../components/cardtitle.dart';
 import '../components/card.dart';
 //utils
-import '../../utils/app_routes.dart';
-import '../../utils/color.dart';
+import '../../shared/utils/app_routes.dart';
+import '../../shared/utils/color.dart';
 
 class MealItem extends StatelessWidget {
   final Meal meal; //objeto criado apartir da classe Meal

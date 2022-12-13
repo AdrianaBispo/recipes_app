@@ -3,13 +3,11 @@ import 'package:provider/provider.dart';
 //view
 import '../src/features/bottom_bar/bottom_bar_screen.dart';
 import '../src/features/detail/detail_screen.dart';
-//Model
-import 'shared/models/meal.dart';
 //Controller
 import 'features/detail_controller.dart';
 //utils
-import '../utils/app_routes.dart';
-import '../utils/color.dart';
+import 'shared/utils/app_routes.dart';
+import 'shared/utils/color.dart';
 
 class MyApp extends StatelessWidget {
 

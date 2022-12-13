@@ -1,5 +1,5 @@
 import 'dart:convert';
-import '../shared/models/meal.dart';
+import '../../shared/models/meal.dart';
 import 'package:http/http.dart' as http;
 
 abstract class IMealRepository {

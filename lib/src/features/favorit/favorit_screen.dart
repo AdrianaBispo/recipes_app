@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 //ui
-import '../../components/meal_item_ui.dart';
+import '../components/meal_item_ui.dart';
 //models
 import '../../shared/models/meal.dart';
 //controller

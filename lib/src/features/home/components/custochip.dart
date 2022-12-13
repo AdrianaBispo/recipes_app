@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //utils
-import '../../../../utils/color.dart';
+import '../../../shared/utils/color.dart';
 
 class CustoChoiceChip extends StatelessWidget {
   CustoChoiceChip(

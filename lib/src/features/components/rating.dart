@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //utils
-import '../../utils/color.dart';
+import '../../shared/utils/color.dart';
 
 class Ranting extends StatelessWidget {
   Ranting({required this.rating, this.cor = AppColor.primaria});

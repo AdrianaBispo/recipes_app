@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 //ui
-import '../../components/meal_item_ui.dart';
+import '../components/meal_item_ui.dart';
 import 'components/custochip.dart';
-import '../../components/custoprogress.dart';
+import '../components/custoprogress.dart';
 //models
 import '../../shared/models/meal.dart';
 //controller
 import 'home_controller.dart';
 //repository
-import '../../repository/meal_api.dart';
+import '../repository/meal_api.dart';
 
 class MealsScreen extends StatefulWidget {
   @override

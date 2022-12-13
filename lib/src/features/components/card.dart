@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //utils
-import '../../../../utils/color.dart';
+import '../../shared/utils/color.dart';
 
 class CardCusto extends StatelessWidget {
   CardCusto({required this.child, this.color = AppColor.secundaria});
