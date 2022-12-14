@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../shared/utils/color.dart';
 
 class Ranting extends StatelessWidget {
-  Ranting({required this.rating, this.cor = AppColor.primaria});
+  const Ranting({Key? key, required this.rating, this.cor = AppColor.primaria}) : super(key: key);
   final double rating;
   final Color cor;
 
