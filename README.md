@@ -17,8 +17,7 @@
 <h2 id='sobre'>Descrição do Projeto</h2>
 
 <p>
- Um simples aplicativo que exibe receitas e que o usuario pode favoritar algumas delas. 
-</p>
+ Neste aplicativo de receitas os usuários visualizam as receitas, seus passos e seus ingredientes. Você também pode filtrar qual tipo de tag não deve ter a receita. Por fim, também é possível adicionar a comida como favorita. Todos os dados são obtidos de uma API.</p>
 <!--final sobre -->
 
 <h2 id='funcionalidade'>Funcionalidade</h2>
