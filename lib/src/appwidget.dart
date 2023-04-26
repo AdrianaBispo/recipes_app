@@ -27,19 +27,19 @@ class MyApp extends StatelessWidget {
           fontFamily: 'RobotoCondensed-Regular',
           canvasColor: Colors.white,
           textTheme: ThemeData.light().textTheme.copyWith(
-                headline6: const TextStyle(
+                headline6: TextStyle(
                   fontSize: 20,
                   fontFamily: 'RobotoCondensed-Light',
-                  color: AppColor.black,
+                  color: AppColor.instance.black,
                   fontWeight: FontWeight.w400,
                   overflow: TextOverflow.ellipsis,
                 ),
     
-                headline5: const TextStyle(
+                headline5: TextStyle(
                   fontSize: 20,
                   fontFamily: 'RobotoCondensed-Light',
                   fontWeight: FontWeight.w600,
-                  color: AppColor.primaria,
+                  color: AppColor.instance.primaria,
                 ),
     
                 
@@ -47,8 +47,8 @@ class MyApp extends StatelessWidget {
         ),
               
         routes: {
-          AppRoutes.HOME: (ctx) => BottomBarScreen(),
-          AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
+          AppRoutes.instance.HOME: (ctx) => BottomBarScreen(),
+          AppRoutes.instance.MEAL_DETAIL: (ctx) => MealDetailScreen(),
         },
       ),
     );
