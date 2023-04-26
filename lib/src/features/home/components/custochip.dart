@@ -11,19 +11,19 @@ class CustoChoiceChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChoiceChip(
-      backgroundColor: AppColor.secundaria,
+      backgroundColor: AppColor.instance.secundaria,
       padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
       label: Text(
         text,
-        style: const TextStyle(
-          color: AppColor.black,
+        style: TextStyle(
+          color: AppColor.instance.black,
         ),
       ),
-      selectedColor: AppColor.primaria,
-      shape: const RoundedRectangleBorder(
+      selectedColor: AppColor.instance.primaria,
+      shape: RoundedRectangleBorder(
         side: BorderSide(
           width: 2,
-          color: AppColor.primaria,
+          color: AppColor.instance.primaria,
         ),
         borderRadius: BorderRadius.all(
           Radius.circular(5),
