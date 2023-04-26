@@ -34,12 +34,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.secundaria,
+      backgroundColor: AppColor.instance.secundaria,
       appBar: AppBar(
-              shape: const RoundedRectangleBorder(
+              shape: RoundedRectangleBorder(
         side: BorderSide(
           width: 2,
-          color: AppColor.primaria,
+          color: AppColor.instance.primaria,
         ),
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(10),
@@ -50,13 +50,13 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         elevation: 0,
         title: Text(
           _titles[_index],
-          style: const TextStyle(
-            color: AppColor.black,
+          style: TextStyle(
+            color: AppColor.instance.black,
             fontSize: 30,
             fontFamily: 'RobotoCondensed-Bold',
           ),
         ),
-        backgroundColor: AppColor.primaria,
+        backgroundColor: AppColor.instance.primaria,
         centerTitle: true,
       ),
       body: _screen[_index],
@@ -64,11 +64,11 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         type: BottomNavigationBarType.fixed,
         currentIndex: _index,
         onTap: _selected,
-        selectedItemColor: AppColor.primaria,
+        selectedItemColor: AppColor.instance.primaria,
         selectedFontSize: 1,
         unselectedFontSize: 1,
         iconSize: 30,
-        unselectedItemColor: AppColor.unselected,
+        unselectedItemColor: AppColor.instance.unselected,
         items: const [
           BottomNavigationBarItem(
             label: '',
