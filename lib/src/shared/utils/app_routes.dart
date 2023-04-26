@@ -1,7 +1,14 @@
 class AppRoutes {
-  static const HOME = '/';
-  static const MEAL_SCREEN = '/meal-screen';
-  static const CATEGORIES_MEALS = '/categories-meals';
-  static const MEAL_DETAIL = '/meal-detail';
-  static const FAVORIT = '/favorit';
+  static AppRoutes? _instance;
+  AppRoutes._();
+  static AppRoutes get instance {
+    _instance ??= AppRoutes._();
+    return _instance!;
+  }
+  
+  String get HOME => '/';
+  String get MEAL_SCREEN => '/meal-screen';
+  String get CATEGORIES_MEALS => '/categories-meals';
+  String get MEAL_DETAIL => '/meal-detail';
+  String get FAVORIT => '/favorit';
 }

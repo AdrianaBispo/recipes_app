@@ -46,9 +46,9 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
         if (loadingProgress == null) {
           return child;
         } else {
-          return const Center(
+          return Center(
             child: CircularProgressIndicator(
-              color: AppColor.primaria,
+              color: AppColor.instance.primaria,
             ),
           );
         }
@@ -58,7 +58,7 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
 
   Widget custoAppBar(Meal meal, context) {
     return Container(
-      color: AppColor.primaria,
+      color: AppColor.instance.primaria,
       height: 50,
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -69,7 +69,7 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
             radius: 20,
             backgroundColor: Colors.white,
             child: IconButton(
-              color: AppColor.black,
+              color: AppColor.instance.black,
               icon: const Icon(Icons.arrow_back_ios_new_sharp),
               onPressed: () {
                 Navigator.pop(context);
@@ -80,9 +80,9 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
             builder: (context, controller, child) {
               return CircleAvatar(
                 radius: 20,
-                backgroundColor: AppColor.secundaria,
+                backgroundColor: AppColor.instance.secundaria,
                 child: IconButton(
-                  color: AppColor.primaria,
+                  color: AppColor.instance.primaria,
                   icon: Icon(
                     controller.meals.contains(meal)
                     ? Icons.favorite_sharp
@@ -104,7 +104,7 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
     final meal = ModalRoute.of(context)!.settings.arguments as Meal;
     final controller = context.watch<DetailController>();
     return Scaffold(
-      backgroundColor: AppColor.secundaria,
+      backgroundColor: AppColor.instance.secundaria,
       body: SafeArea(
         child: SingleChildScrollView(
           physics: const ScrollPhysics(),
@@ -119,12 +119,12 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
                     Align(
                       alignment: const Alignment(0.2, 0.8),
                       child: CardCusto(
-                        color: AppColor.primaria,
+                        color: AppColor.instance.primaria,
                         child: CardTitle(
                           title: meal.title,
                           duracao: meal.duration,
                           rating: meal.rating,
-                          cor: AppColor.secundaria,
+                          cor: AppColor.instance.secundaria,
                         ),
                       ),
                     ),
@@ -148,10 +148,10 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
                       child: Text(
                         meal.ingredientLines[index].wholeLine,
                         textAlign: TextAlign.left,
-                        style: const TextStyle(
+                        style:TextStyle(
                           fontSize: 16,
                           fontFamily: 'RobotoCondensed-Light',
-                          color: AppColor.black,
+                          color: AppColor.instance.black,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
@@ -175,11 +175,11 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
                         child: ListTile(
                           leading: CircleAvatar(
                             radius: 15,
-                            backgroundColor: AppColor.primaria,
+                            backgroundColor: AppColor.instance.primaria,
                             child: Text(
                               '${index + 1}',
-                              style: const TextStyle(
-                                color: AppColor.secundaria,
+                              style: TextStyle(
+                                color: AppColor.instance.secundaria,
                                 fontFamily: 'RobotoCondensed-Light',
                               ),
                             ),
